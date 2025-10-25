@@ -32,7 +32,7 @@ def format_session_text(session: Session):
         text += f'\n\n🗺️ Место проведения: <strong>{session.place.title}</strong>'
     
     if not (session.start_date is None or session.end_date is None):
-        text += f'\n📆 Даты: <strong>{str(session.start_date).replace('-', '.')}–{str(session.end_date).replace('-', '.')}</strong>'
+        text += f"\n📆 Даты: <strong>{str(session.start_date).replace('-', '.')}–{str(session.end_date).replace('-', '.')}</strong>"
     
     if not session.description is None:
         text += f'\n\n{session.description}'
