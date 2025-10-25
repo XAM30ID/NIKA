@@ -71,7 +71,7 @@ class Place(models.Model):
     
 # Пути для баннеров смен
 def session_image_path(instance, filename):
-    return os.path.join(f'images/sessions/{instance.slug}.{filename.split('.')[-1]}')
+    return os.path.join(f"images/sessions/{instance.slug}.{filename.split('.')[-1]}")
 
 
 class Session(models.Model):
